@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timeList">
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+        <item>4小时</item>
+        <item>5小时</item>
+        <item>6小时</item>
+        <item>7小时</item>
+        <item>8小时</item>
+        <item>9小时</item>
+        <item>10小时</item>
+    </string-array>
+
+
+
+
+</resources>

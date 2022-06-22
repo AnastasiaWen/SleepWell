@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_setting"
+        android:title="连接" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_sleep"
+        android:title="睡眠" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_data"
+        android:title="数据" />
+
+
+
+
+</menu>

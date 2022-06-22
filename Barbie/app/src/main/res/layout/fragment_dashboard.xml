@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/back3">
+
+        <TextView
+            android:id="@+id/TextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mCalender"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/calender"
+            android:clickable="true"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/sleepLabel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="睡眠状态"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barNow"
+            android:layout_width="421dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="-14dp"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="279dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/databox2">
+
+
+            <TextView
+                android:id="@+id/textAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:layout_marginStart="120dp"
+                android:text="总睡眠时间"
+
+                />
+
+            <TextView
+                android:id="@+id/textwake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="140dp"
+                android:text="觉醒"
+
+                />
+            <TextView
+                android:id="@+id/txWake"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="110dp" />
+
+            <TextView
+                android:id="@+id/textREM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="40dp"
+                android:text="REM"
+
+                />
+
+            <TextView
+                android:id="@+id/txREM"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/textSleep1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="140dp"
+                android:text="N1"
+
+                />
+
+            <TextView
+                android:id="@+id/sleep1"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="110dp" />
+
+            <TextView
+                android:id="@+id/textSleep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="40dp"
+                android:text="N2"
+
+                />
+
+            <TextView
+                android:id="@+id/sleep2"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/textSleep3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="140dp"
+                android:text="N3"
+
+                />
+
+            <TextView
+                android:id="@+id/sleep3"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="110dp" />
+
+            <TextView
+                android:id="@+id/textSleep4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="40dp"
+                android:text="N4"
+                />
+
+            <TextView
+                android:id="@+id/sleep4"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="10dp" />
+
+
+
+
+
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieNow"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/timeofClass"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="233dp"
+                android:layout_marginStart="30dp" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

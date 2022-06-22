@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/back2">
+
+
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="395dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/box1"
+            android:layout_marginTop="10dp">
+
+            <Switch
+                android:id="@+id/deviceOpen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp" />
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/chart"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="135dp"
+                android:background="@color/transparent" />
+
+            <TextView
+                android:id="@+id/spo2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="50dp"
+                android:textColor="@color/my_gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/breathText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="180dp"
+                android:textSize="16dp"
+                android:textColor="@color/my_gray"
+                />
+
+            <TextView
+                android:id="@+id/pulseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="220dp"
+                android:textColor="@color/my_gray"
+                />
+
+            <TextView
+                android:id="@+id/stateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="240dp"
+                android:textColor="@color/my_gray"
+                />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chartLine"
+                android:layout_width="50dp"
+                android:layout_height="257dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="-62dp"
+                android:layout_marginBottom="75dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chartLine2"
+                android:layout_width="50dp"
+                android:layout_height="257dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="-18dp"
+                android:layout_marginBottom="75dp" />
+
+            <LinearLayout
+                android:id="@+id/EEG_plot"
+                android:layout_width="362dp"
+                android:layout_height="93dp"
+                android:layout_alignBottom="@+id/chartLine"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="-185dp"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_PWPlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="PW" />
+                <Button
+                android:id="@+id/btn_EEGPlot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="EEG"
+                />
+
+                <Button
+                 android:id="@+id/btn_BreathPlot"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Breath"
+                    android:layout_alignParentRight="true"
+                 />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="230dp"
+                android:background="@mipmap/box2"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+                <Switch
+                    android:id="@+id/openHelp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp" />
+
+
+                <SeekBar
+                    android:id="@+id/seekbar_photo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="95dp" />
+
+
+                <SeekBar
+                    android:id="@+id/seekbar_sound"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="130dp" />
+
+                <Switch
+                    android:id="@+id/autowake"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="5dp" />
+
+                <Spinner
+                    android:id="@+id/autowakeSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginRight="76dp"
+                    android:entries="@array/timeList" />
+
+                <ImageView
+                    android:id="@+id/music_up"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginStart="80dp"
+                    android:src="@mipmap/music_up"/>
+
+                <ImageView
+                    android:id="@+id/music_down"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/music_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginEnd="80dp"/>
+
+                <ImageView
+                    android:id="@+id/music_play"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/music_play"
+                    android:layout_marginTop="145dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="160dp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
