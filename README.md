@@ -1,4 +1,3 @@
-<img width="1155" height="649" alt="1755328650600" src="https://github.com/user-attachments/assets/e050937e-ba62-4c3f-ac78-085eb24e5bf5" /># SleepWell App
 
 👩‍💻 **Authors**  
 - Wen, C. Qiu, X. Zhu  
